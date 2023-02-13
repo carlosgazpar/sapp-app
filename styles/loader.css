@@ -1,4 +1,5 @@
 .preloader-wrapper {
+    background-color: white;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -21,11 +22,12 @@
 }
 
 .preloader {
-    position: relative;
     display: block;
     height: 80px;
-    width: 170px;
+    position: relative;
     top: -40px;
+    transition: 1s all;
+    width: 170px;
     z-index: 99;
 }
 
