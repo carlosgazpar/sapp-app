@@ -1,0 +1,42 @@
+.different-section{
+    margin: 100px 0;
+    text-align: center;
+}
+
+.different-section p{
+    max-width: 58.33%;
+    margin: auto;
+    margin-top: 2em;
+}
+
+.different-section-cards{
+    display: flex;
+    max-width: 1140px;
+    margin: auto;
+    padding: 0 15px;
+    gap: 0 30px;
+    margin-bottom: 3em;
+}
+
+.different-section-cards img{
+    width: 3em;
+    height: 3em;
+}
+
+.info-cards{
+    text-align: center;
+    padding: 3em;
+    box-shadow: 0 3px 20px 0px rgb(0 0 0 / 12%);
+    border-radius: 1.5rem;
+    transition: .3s ease 0s all;
+    position: relative;
+}
+
+.info-cards p{
+    color: #565656;
+}
+
+.info-cards:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 1rem 3rem rgb(31 45 61 / 13%);
+}

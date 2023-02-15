@@ -5,12 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>sapp-app</title>
-    <link href="styles/index.css" rel="stylesheet">
-    <link href="styles/welcome.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/welcome.css">
     <link rel="stylesheet" href="styles/loader.css">
     <link rel="stylesheet" href="styles/waves.css">
+    <link rel="stylesheet" href="styles/different-section.css">
+    <link rel="stylesheet" href="styles/scroll-up.css">
 </head>
 <body>
+
+<!-- inicio de boton ir hacia arriba -->
+    <div class="scroll-up" id="scroll-up">
+        <svg class="svg-inline--fa fa-arrow-up fa-w-14" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-up" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5 9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3 9.8-24.8 10-34.3.4z"></path></svg>
+    </div>
+<!-- fin de boton ir hacia arriba -->
 
 <!-- inicio de loader -->
     <!-- <div class="preloader-wrapper">
@@ -59,16 +67,44 @@
         <div class="container-main-img">
             <img src="img/phone.png" title="imagen de telefono" alt="imagen de telefono">
         </div>
+        <!-- inicio de imagen de curvas -->
+        <div class="waves waves-1">
+            <svg viewBox="0 0 1920 310" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="svg replaced-svg"><title>sApp Shape</title><desc>Created with Sketch</desc><defs></defs><g id="sApp-Landing-Page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="sApp-v1.0" transform="translate(0.000000, -554.000000)" fill="#FFFFFF"><path d="M-3,551 C186.257589,757.321118 319.044414,856.322454 395.360475,848.004007 C509.834566,835.526337 561.525143,796.329212 637.731734,765.961549 C713.938325,735.593886 816.980646,681.910577 1035.72208,733.065469 C1254.46351,784.220361 1511.54925,678.92359 1539.40808,662.398665 C1567.2669,645.87374 1660.9143,591.478574 1773.19378,597.641868 C1848.04677,601.75073 1901.75645,588.357675 1934.32284,557.462704 L1934.32284,863.183395 L-3,863.183395" id="sApp-v1.0"></path></g></g></svg>
+        </div>
+        <!-- fin de imagen de curvas -->
     </div>
 </div>
 <!-- termina bloque principal -->
 
-<!-- inicio de imagen de curvas -->
-<div class="waves waves-1">
-    <svg viewBox="0 0 1920 310" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="svg replaced-svg"><title>sApp Shape</title><desc>Created with Sketch</desc><defs></defs><g id="sApp-Landing-Page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="sApp-v1.0" transform="translate(0.000000, -554.000000)" fill="#FFFFFF"><path d="M-3,551 C186.257589,757.321118 319.044414,856.322454 395.360475,848.004007 C509.834566,835.526337 561.525143,796.329212 637.731734,765.961549 C713.938325,735.593886 816.980646,681.910577 1035.72208,733.065469 C1254.46351,784.220361 1511.54925,678.92359 1539.40808,662.398665 C1567.2669,645.87374 1660.9143,591.478574 1773.19378,597.641868 C1848.04677,601.75073 1901.75645,588.357675 1934.32284,557.462704 L1934.32284,863.183395 L-3,863.183395" id="sApp-v1.0"></path></g></g></svg>
-</div>
-<!-- fin de imagen de curvas -->
+<!-- inicio de seccion What Makes sApp Different? -->
+    <div class="different-section">
+        <span class="heading-icons"><span>Premium</span> Features</span>
+        <h2 class="subtitles">What Makes sApp Different?</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati dignissimos quae quo ad iste ipsum officiis deleniti asperiores sit.</p>
+    </div>
 
+    <div class="different-section-cards">
+        <div class="info-cards">
+            <img src="img/inf-card-1.png" alt="Fully functional" title="Fully functional">
+            <h3>Fully functional</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis culpa expedita dignissimos.</p>
+        </div>
 
+        <div class="info-cards">
+            <img src="img/inf-card-2.png" alt="Live Chat" title="Live Chat">
+            <h3>Live Chat</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis culpa expedita dignissimos.</p>
+        </div>
+
+        <div class="info-cards">
+            <img src="img/inf-card-3.png" alt="Secure Data" title="Secure Data">
+            <h3>Secure Data</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis culpa expedita dignissimos.</p>
+        </div>
+    </div>
+
+<!-- fin de seccion What Makes sApp Different? -->
+
+<script src="scripts/scroll-up.js"></script>
 </body>
 </html>

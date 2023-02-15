@@ -1,0 +1,27 @@
+.scroll-up{
+    position: fixed;
+    right: 2%;
+    bottom: 3%;
+    height: 45px;
+    width: 40px;
+    border-radius: 4px;
+    background-color: rgba(35, 35, 35, .65);
+    text-align: center;
+    cursor: pointer;
+    transition: all.4s;
+    z-index: 100;
+}
+
+.scroll-up:hover{
+    background-color: #666;
+}
+
+.scroll-up svg{
+    color: #fff;
+    font-size: 22px;
+    margin: 0 auto;
+    height: 100%;
+    width: .875em;
+    display: block;
+
+}

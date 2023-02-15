@@ -13,8 +13,55 @@ h1{
     line-height: 67px;
 }
 
+h2{
+    font-size: 40px;
+    font-weight: 600;
+    color: #222;
+    line-height: 52px;
+    margin: .25em 0;
+    position: relative;
+}
+
+h3{
+    font-size: 20px;
+    font-weight: 600;
+    color: #222;
+    line-height: 24px;
+    margin: .25em 0;
+    position: relative;
+}
+
 p{
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
+}
+
+.heading-icons{
+    color: #222;
+    font-weight: 500;
+    padding: .5em 1.5em;
+    margin: auto;
+    margin-bottom: 1em;
+    border-radius: 50em;
+    display: block;
+    box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075);
+    width: fit-content;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.heading-icons span{
+    color: #7c4fe0;
+}
+
+.subtitles::after{
+    content: '';
+    width: 70px;
+    height: 2px;
+    background-color: #7c4fe0;
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
 }
