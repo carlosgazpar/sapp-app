@@ -10,6 +10,7 @@
     cursor: pointer;
     transition: all.4s;
     z-index: 100;
+    display: none;
 }
 
 .scroll-up:hover{
