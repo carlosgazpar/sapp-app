@@ -36,6 +36,7 @@ p{
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
+    color: #565656;
 }
 
 .heading-icons{
@@ -69,4 +70,39 @@ p{
 
 .cursive {
     font-style: italic;
+}
+
+.button {
+    background-color: #7c4fe0;
+    border-radius: 8px;
+    border: 0;
+    height: 60px;
+    width: 100%;
+    font-family: 'Poppins';
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 15px;
+    color: #fff;
+    transition: all .3s;
+}
+
+.button:hover{
+    box-shadow: 0 10px 25px rgb(0 0 0 / 10%);
+}
+
+input{
+    display: block;
+    width: calc(100% - 20px - .75rem);
+    padding: .375rem .75rem;
+    padding-left: 20px;
+    border: 0;
+    font-family: 'Poppins';
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 23px;
+    color: #495057;
+    min-height: 50px;
+    box-shadow: 0 5px 10px rgb(0 0 0 / 10%);
+    margin-bottom: 1em;
+    outline: none;
 }

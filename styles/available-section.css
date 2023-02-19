@@ -34,6 +34,10 @@
     margin-bottom: .4em;
 }
 
+.available-section p{
+    color: #fff;
+}
+
 .available-section div{
     margin-top: 30px;
     margin-bottom: 15px;

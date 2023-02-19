@@ -1,0 +1,23 @@
+.subscribe-section{
+    padding: 100px 15px;
+    text-align: center;
+    max-width: 1140px;
+    margin: auto;
+    background-image: url(../img/subscribe-bg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.subscribe-section div{
+    max-width: 55%;
+    margin: auto;
+}
+.subscribe-section p{
+    margin: 1.5em 0;
+}
+
+.subscribe-section input{
+    text-align: center;
+    border-radius: 8px;
+}
