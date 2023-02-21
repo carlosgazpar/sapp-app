@@ -20,4 +20,5 @@
 .subscribe-section input{
     text-align: center;
     border-radius: 8px;
+    height: 60px;
 }

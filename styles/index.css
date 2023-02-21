@@ -84,16 +84,18 @@ p{
     line-height: 15px;
     color: #fff;
     transition: all .3s;
+    cursor: pointer;
 }
 
 .button:hover{
     box-shadow: 0 10px 25px rgb(0 0 0 / 10%);
 }
 
-input{
+input,textarea{
     display: block;
     width: calc(100% - 20px - .75rem);
-    padding: .375rem .75rem;
+    padding: 0 .75rem;
+    height: 50px;
     padding-left: 20px;
     border: 0;
     font-family: 'Poppins';
@@ -105,4 +107,11 @@ input{
     box-shadow: 0 5px 10px rgb(0 0 0 / 10%);
     margin-bottom: 1em;
     outline: none;
+}
+
+textarea{
+    height: 160px;
+    padding: 15px;
+    transition: all .3s;
+    resize: vertical;
 }
