@@ -1,9 +1,11 @@
 .preloader-wrapper {
-    background-color: white;
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
 }
 
 .loader-section {
@@ -11,14 +13,26 @@
     top: 0;
     height: 100%;
     width: calc(50% + 1px);
+    background-color: white;
+    transition: all 1s;
 }
 
-.loader-section .section-left {
+.section-left {
     left: 0;
 }
 
-.loader-section .section-right {
+.section-left-hide{
+    visibility: hidden;
+    transform: translate(-100%);
+}
+
+.section-right {
     right: 0;
+}
+
+.section-right-hide{
+    visibility: hidden;
+    transform: translate(100%);
 }
 
 .preloader {
@@ -39,6 +53,15 @@ circle.dot:nth-of-type(2) {
     transform: translateX(55px);
     animation: slide 2s ease infinite;
     animation-delay: 1s;
+}
+
+#dots{
+    transition: all .3s;
+}
+
+.dots-hide{
+    opacity: 0;
+    visibility: hidden;
 }
 
 @keyframes slide {

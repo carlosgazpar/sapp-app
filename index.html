@@ -31,7 +31,7 @@
 <!-- fin de boton ir hacia arriba -->
 
 <!-- inicio de loader -->
-    <!-- <div class="preloader-wrapper">
+    <div class="preloader-wrapper">
 
         <svg class="preloader" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100" height="100">
             <defs>                    
@@ -40,7 +40,7 @@
                     <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -8" result="goo" />
                 </filter>
             </defs>
-            <g filter="url(#goo)">
+            <g id="dots" filter="url(#goo)">
                 <circle class="dot" cx="50" cy="50" r="25" fill="#8731E8" />
                 <circle class="dot" cx="50" cy="50" r="25" fill="#8731E8" />
             </g>
@@ -51,7 +51,7 @@
             <div class="loader-section section-right"></div>
         </div>
 
-    </div>   -->
+    </div>  
 <!-- fin de lauder -->
 
 <!-- inicia header -->
@@ -74,9 +74,9 @@
                             <li><a href="/">Homepage-6</a></li>
                         </ul>
                     </li>
-                    <li><a href="/">Features</a></li>
+                    <li><a href="#features">Features</a></li>
                     <li>
-                        <a class="menu-item-dropdown" href="/">Pages</a>
+                        <a class="menu-item-dropdown" href="interface">Beautiful Interface</a>
                         <ul class="dropdown-menu">
                             <li><a href="/">Inner pages</a></li>
                             <li><a href="/">Blog pages</a></li>
@@ -89,9 +89,9 @@
                             <li class="menu-item-inactive"><a>More Coming Soon</a></li>
                         </ul>
                     </li>
-                    <li><a href="/">Screenshots</a></li>
-                    <li><a href="/">Pricing</a></li>
-                    <li><a href="/">Contact</a></li>
+                    <li><a href="#team">Our Team</a></li>
+                    <li><a href="#available">Availability</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -100,7 +100,7 @@
 <!-- termina header -->
 
 <!-- inicia bloque principal -->
-<div class="container-main">
+<div id="home" class="container-main">
     <div class="container-main-content">
 
         <!-- inicia bloque de texto -->
@@ -132,7 +132,7 @@
 <!-- termina bloque principal -->
 
 <!-- inicia seccion de contadores -->
-<div class="container-counter">
+<div class="container-counter" id="counter">
     <div>
         <div>
             <span class="counter">10</span><span>M</span>
@@ -161,7 +161,7 @@
 <!-- fin seccion de contadores -->
 
 <!-- inicio de seccion What Makes sApp Different? -->
-    <div class="different-section">
+    <div id="features" class="different-section">
         <span class="heading-icons"><span>Premium</span> Features</span>
         <h2 class="subtitles">What Makes sApp Different?</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati dignissimos quae quo ad iste ipsum officiis deleniti asperiores sit.</p>
@@ -189,7 +189,7 @@
 <!-- fin de seccion What Makes sApp Different? -->
 
 <!-- inicio de seccion Simple & Beautiful Interface -->
-    <div class="simple-section">
+    <div id="interface" class="simple-section">
         <span class="heading-icons"><span>Awesome</span> Interface</span>
         <h2 class="subtitles">Simple & Beautiful Interface</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati dignissimos quae quo ad iste ipsum officiis deleniti asperiores sit.</p>
@@ -214,7 +214,7 @@
 <!-- fin de seccion Simple & Beautiful Interface -->
 
 <!-- inicio de seccion Our Team Experts -->
-    <div class="team-section">
+    <div id="team" class="team-section">
         <h2 class="subtitles">Our Team Experts</h2>
         <p class="team-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati dignissimos quae quo ad iste ipsum officiis deleniti asperiores sit.</p>
         <div class="team-avatars">
@@ -310,7 +310,7 @@
 <!-- fin de seccion Our Team Experts -->
 
 <!-- inicio de seccion sAap is available -->
-    <div class="available-section">
+    <div id="available" class="available-section">
         <h2>sApp is available for all devices</h2>
         <p>sApp is available for all devices, consectetur adipisicing elit. Itaque at harum quam explicabo. Aliquam optio, delectus, dolorem quod neque eos totam. Delectus quae animi tenetur voluptates doloribus commodi dicta modi aliquid deserunt, quis maiores nesciunt autem, aperiam natus.</p>
         <div>
@@ -322,7 +322,7 @@
 <!-- fin de seccion sAap is available -->
 
 <!-- inicio de seccion subscribe -->
-    <div class="subscribe-section">
+    <div id="subscribe" class="subscribe-section">
         <div class="subscribe-section-content">
             <h2>Subscribe to get updates</h2>
             <p>By subscribing you will get newsleter, promotions adipisicing elit. Architecto beatae, asperiores tempore repudiandae saepe aspernatur unde voluptate sapiente quia ex.</p>
@@ -335,7 +335,7 @@
 <!-- fin de seccion subscribe -->
 
 <!-- inicio de formulario de contacto -->
-    <div class="contact-section">
+    <div id="contact" class="contact-section">
         <div class="contact-section-content">
             <h2 class="subtitles">Stay Tuned</h2>
             <p class="contact-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum obcaecati dignissimos quae quo ad iste ipsum officiis deleniti asperiores sit.</p>
@@ -397,19 +397,19 @@
             </div>
             <div class="footer-main-column">
                 <h3>Useful Links</h3>
-                <a class="footer-links" href="/">Home</a>
-                <a class="footer-links" href="/">About Us</a>
-                <a class="footer-links" href="/">Services</a>
-                <a class="footer-links" href="/">Blog</a>
-                <a class="footer-links" href="/">Contact</a>
+                <a class="footer-links" href="#home">Home</a>
+                <a class="footer-links" href="#counter">Counter</a>
+                <a class="footer-links" href="#features">Premium Features</a>
+                <a class="footer-links" href="#interface">Awesome Interface</a>
+                <a class="footer-links" href="#team">Our Team Experts</a>
             </div>
             <div class="footer-main-column">
                 <h3>Product Help</h3>
-                <a class="footer-links" href="/">FAQ</a>
-                <a class="footer-links" href="/">Privacy Policy</a>
-                <a class="footer-links" href="/">Support</a>
+                <a class="footer-links" href="#available">SApp Is Available</a>
+                <a class="footer-links" href="#subscribe">Subscribe To Get Updates</a>
+                <a class="footer-links" href="#contact">Contact</a>
                 <a class="footer-links" href="/">Terms & Conditions</a>
-                <a class="footer-links" href="/">Contact</a>
+                <a class="footer-links" href="/">Privacy Policy</a>
             </div>
             <div class="footer-main-column footer-main-column-img">
                 <h3>Download</h3>
@@ -435,5 +435,6 @@
 <script src="scripts/scroll-up.js"></script>
 <script src="scripts/counter.js"></script>
 <script src="scripts/slider.js"></script>
+<script src="scripts/loader.js"></script>
 </body>
 </html>
