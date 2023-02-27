@@ -7,4 +7,11 @@ window.addEventListener('load', () => {
 
     const sectionRight = document.querySelector('.section-right')
     sectionRight.classList.add('section-right-hide')
+
+    const loaderWrapper = document.querySelector('.preloader-wrapper')
+
+    setTimeout( () =>{
+        loaderWrapper.remove()
+    }, 1000)
+
 })
